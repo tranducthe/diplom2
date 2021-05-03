@@ -1,0 +1,31 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container videos-list">
+    <br>
+        <h1 class="md-4" align="center"> RECOMMENDATION SYSTEM CHOOSE INDUSTRY, UNIVERSITY FOR YOU </h1> <br> <br>
+
+    {% for item in object_listJob %}
+    <div class="d-flex" style="margin-bottom: 20px">
+        <div class="flex-shrink-0">
+            <a href=""><img src="{{ item.pictrure.url }}" class="mr-3" alt="" width="120px" height="120px"></a>
+        </div>
+        <div class="media-body" style="margin-left: 20px">
+
+            <h5 class="mt-0"><a href="{% url 'recommen:recom1' item.id %}">{{ item.name }}</a></h5>
+            <ul>
+                <a href="="> Andress: {{ item.anddress }} </a>
+            </ul>
+            <h6 align="justify"> {{ item.excerpt }} </h6>
+        </div>
+    </div>
+    {% endfor %}
+
+</div>
+
+{% endblock %}
+
+
+
+

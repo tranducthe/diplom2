@@ -1,0 +1,40 @@
+{% extends 'Base.html' %}
+
+
+{% block content %}
+<br><br><br><br>
+<div class="container videos-list">
+    <div class="d-flex" style="margin-bottom: 20px">
+        <div class="flex-shrink-0">
+            <a href=""><img src="{{ listdetail.pictrure.url }}" class="mr-3" alt="" width="120px" height="120px"></a>
+        </div>
+        <div class="media-body" style="margin-left: 20px">
+
+            <h5 class="mt-0"><a href="#">{{ listdetail.name }}</a></h5>
+            <ul>
+                <a href="="> Andress: {{ listdetail.anddress }} </a>
+            </ul>
+            <h6 align="justify"> {{ listdetail.description }} </h6>
+        </div>
+    </div>
+</div>
+
+<br><br><br><br>
+
+<div class="container videos-list">
+    <h1>Recommendation for you:</h1>
+    <div class="d-flex" style="margin-bottom: 20px">
+
+        <div class="media-body" style="margin-left: 20px">
+            <h5 class="mt-0"><a href="#">Dai hoc bach khoa da nang</a></h5>
+            <h5 class="mt-0"><a href="#">Dai hoc Cong nghiep Ha Noi</a></h5>
+            <h5 class="mt-0"><a href="#">Dai hoc bach khoa da nang</a></h5>
+            <h5 class="mt-0"><a href="#">Dai hoc bach khoa da nang</a></h5>
+            <h5 class="mt-0"><a href="#">Dai hoc bach khoa da nang</a></h5>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+

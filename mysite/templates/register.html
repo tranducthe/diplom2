@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <center>
+        <form action="{% url 'UserMember:register' %}" method="post">
+            {% csrf_token %}
+            {{ rf.as_p }}
+            <input type="submit" value="Register accout">
+        </form>
+    </center>
+</body>
+</html>
